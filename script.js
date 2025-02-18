@@ -221,12 +221,15 @@ function handleTaskAction(e) {
         if (confirm('Are you sure you want to delete this task?')) {
             // Add delete animation
             taskCard.style.animation = 'slideOut 0.3s ease-out';
+
+            // Wait for the animation to finish before removing the task
             taskCard.addEventListener('animationend', () => {
+                console.log('Animation ended, deleting task...'); // Debugging
                 tasks[selectedDay].splice(taskIndex, 1);
                 saveTasks();
                 renderTasks();
-            });
-            showNotification('Task deleted', 'success');
+                showNotification('Task deleted', 'success');
+            }, { once: true }); // Use { once: true } to ensure the event listener is removed after firing
         }
     }
 }
