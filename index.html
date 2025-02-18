@@ -3,36 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TimeFlow - Schedule Manager</title>
+    <title>netrebuietimp</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>TimeFlow</h1>
-            <p class="subtitle">Organize your week with ease</p>
+            <h1>NeTrebuieTimp</h1>
+            <p class="subtitle">Nu se poate ciocolata</p>
         </header>
 
         <div class="days-nav">
-            <button class="day-btn active" data-day="Monday">Mon</button>
-            <button class="day-btn" data-day="Tuesday">Tue</button>
-            <button class="day-btn" data-day="Wednesday">Wed</button>
-            <button class="day-btn" data-day="Thursday">Thu</button>
-            <button class="day-btn" data-day="Friday">Fri</button>
-            <button class="day-btn" data-day="Saturday">Sat</button>
-            <button class="day-btn" data-day="Sunday">Sun</button>
+            <button class="day-btn active" data-day="Monday">Lun</button>
+            <button class="day-btn" data-day="Tuesday">Mar</button>
+            <button class="day-btn" data-day="Wednesday">Mie</button>
+            <button class="day-btn" data-day="Thursday">Joi</button>
+            <button class="day-btn" data-day="Friday">Vin</button>
+            <button class="day-btn" data-day="Saturday">Sam</button>
+            <button class="day-btn" data-day="Sunday">Dum</button>
         </div>
 
         <div class="add-task-section">
-            <button id="add-task-btn" class="add-btn">+ Add Task</button>
+            <button id="add-task-btn" class="add-btn">+ Adauga task</button>
             <div id="task-form" class="task-form hidden">
                 <div class="form-group">
-                    <label for="task-title">Task Title</label>
+                    <label for="task-title">Titlu</label>
                     <input type="text" id="task-title" placeholder="What do you need to do?" maxlength="50">
                 </div>
                 
                 <div class="form-group">
-                    <label for="task-description">Description (Optional)</label>
+                    <label for="task-description">Descriere (optional)</label>
                     <textarea id="task-description" rows="2" placeholder="Add more details about your task"></textarea>
                 </div>
 
@@ -42,29 +42,30 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="task-duration">Duration</label>
+                    <label for="task-duration">Duratie (cat timp trebuie sa faci acest task)</label>
                     <select id="task-duration">
-                        <option value="15">15 minutes</option>
-                        <option value="30" selected>30 minutes</option>
-                        <option value="45">45 minutes</option>
-                        <option value="60">1 hour</option>
-                        <option value="90">1.5 hours</option>
-                        <option value="120">2 hours</option>
+                        <option value="15">15 minute</option>
+                        <option value="30" selected>30 minute</option>
+                        <option value="45">45 minute</option>
+                        <option value="60">1 ora</option>
+                        <option value="90">1.5 ora</option>
+                        <option value="120">2 ore</option>
+                        <option value="180">3 ore</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="task-priority">Priority</label>
+                    <label for="task-priority">Prioritate</label>
                     <select id="task-priority">
-                        <option value="low">Low</option>
+                        <option value="low">Putin</option>
                         <option value="medium" selected>Medium</option>
-                        <option value="high">High</option>
+                        <option value="high">Important</option>
                     </select>
                 </div>
 
                 <div class="form-buttons">
-                    <button id="save-task" class="save-btn">Save Task</button>
-                    <button id="cancel-task" class="cancel-btn">Cancel</button>
+                    <button id="save-task" class="save-btn">Salveaza task</button>
+                    <button id="cancel-task" class="cancel-btn">Nu salva</button>
                 </div>
             </div>
         </div>
