@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeFlow - Schedule Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TimeFlow</h1>
+            <p class="subtitle">Organize your week with ease</p>
+        </header>
+
+        <div class="days-nav">
+            <button class="day-btn active" data-day="Monday">Mon</button>
+            <button class="day-btn" data-day="Tuesday">Tue</button>
+            <button class="day-btn" data-day="Wednesday">Wed</button>
+            <button class="day-btn" data-day="Thursday">Thu</button>
+            <button class="day-btn" data-day="Friday">Fri</button>
+            <button class="day-btn" data-day="Saturday">Sat</button>
+            <button class="day-btn" data-day="Sunday">Sun</button>
+        </div>
+
+        <div class="add-task-section">
+            <button id="add-task-btn" class="add-btn">+ Add Task</button>
+            <div id="task-form" class="task-form hidden">
+                <div class="form-group">
+                    <label for="task-title">Task Title</label>
+                    <input type="text" id="task-title" placeholder="What do you need to do?" maxlength="50">
+                </div>
+                
+                <div class="form-group">
+                    <label for="task-description">Description (Optional)</label>
+                    <textarea id="task-description" rows="2" placeholder="Add more details about your task"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="task-time">Start Time</label>
+                    <input type="time" id="task-time">
+                </div>
+
+                <div class="form-group">
+                    <label for="task-duration">Duration</label>
+                    <select id="task-duration">
+                        <option value="15">15 minutes</option>
+                        <option value="30" selected>30 minutes</option>
+                        <option value="45">45 minutes</option>
+                        <option value="60">1 hour</option>
+                        <option value="90">1.5 hours</option>
+                        <option value="120">2 hours</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="task-priority">Priority</label>
+                    <select id="task-priority">
+                        <option value="low">Low</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+
+                <div class="form-buttons">
+                    <button id="save-task" class="save-btn">Save Task</button>
+                    <button id="cancel-task" class="cancel-btn">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="tasks-container">
+            <!-- Tasks will be added here dynamically -->
+        </div>
+    </div>
+
+    <div id="notification" class="notification hidden">
+        <!-- Notifications will appear here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
