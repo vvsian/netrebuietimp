@@ -13,6 +13,23 @@
             <p class="subtitle">Nu se poate ciocolata</p>
         </header>
 
+
+        <div class="timer-section">
+            <div class="timer-display">
+                <span id="timer">00:00:00</span>
+                <div class="timer-controls">
+                    <button id="start-timer" class="timer-btn">Start</button>
+                    <button id="pause-timer" class="timer-btn" disabled>Pause</button>
+                    <button id="reset-timer" class="timer-btn" disabled>Reset</button>
+                </div>
+                <div class="timer-task">
+                    <select id="timer-task-select">
+                        <option value="">Select a task to track</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
         <div class="days-nav">
             <button class="day-btn active" data-day="Monday">Lun</button>
             <button class="day-btn" data-day="Tuesday">Mar</button>
